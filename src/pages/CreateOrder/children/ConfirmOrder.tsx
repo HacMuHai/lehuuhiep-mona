@@ -79,7 +79,7 @@ const ConfirmOrder = (props: IProps) => {
               {product.discount}
               {product?.vourcher
                 ? product?.vourcher?.type == "percentage"
-                  ? "(%)"
+                  ? `(${product?.vourcher?.value}%)`
                   : "($)"
                 : ""}
             </Col>
